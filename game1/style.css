@@ -1,0 +1,65 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  #input-array, #check-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+  }
+  
+  #check-btn {
+    cursor: pointer;
+  }
+  
+  #output-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #result {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #number-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .unique {
+    color: green;
+    animation: highlight 1s ease-in-out;
+  }
+  
+  .duplicate {
+    color: red;
+    animation: shake 0.5s ease-in-out 3; /* Repeat shake animation 3 times */
+  }
+  
+  @keyframes highlight {
+    from {
+      background-color: #e0ffe0;
+    }
+    to {
+      background-color: #fff;
+    }
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
