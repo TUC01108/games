@@ -1,0 +1,63 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  #input-array, #check-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+  }
+  
+  #check-btn {
+    cursor: pointer;
+  }
+  
+  #output-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #result {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #number-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .unique {
+    background-image: url("./images/happy_dog.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    animation: uniqueAnimal 1s ease-in-out;
+  }
+  
+  .duplicate {
+    background-image: url("./images/surprised_cat.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    animation: duplicateAnimal 1s ease-in-out;
+  }
+  
+  @keyframes uniqueAnimal {
+    from { background-position: 0px -20px; }  /* Dog jumps slightly */
+    to { background-position: 0px 0px; }
+  }
+  
+  @keyframes duplicateAnimal {
+    0% { background-position: 0px 0px; }
+    50% { background-position: 20px 0px; }  /* Cat moves head to the side */
+    100% { background-position: 0px 0px; }
+  }
