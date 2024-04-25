@@ -33,9 +33,9 @@ checkBtn.addEventListener('click', () => {
       listItem.classList.add('unique');
 
       const uniqueImg = document.createElement('img');
-      uniqueImg.src = "./images/happy_dog.png";
+      uniqueImg.src = "./images/rabbit.png";
       uniqueImg.onerror = () => {
-        console.error("Error loading happy_dog.png"); // Log error to console
+        console.error("Error loading rabbit.png"); // Log error to console
       };
       listItem.appendChild(uniqueImg);
       numberList.appendChild(listItem);
